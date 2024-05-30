@@ -176,24 +176,37 @@ console.log(
 console.log("RAM counts:", ramCounts);
 
 console.log("=========================Task 8=========================");
-const arrayForForceMethods = [-1, 8, 0, 9, 15, 343, 89, 125, -50, -60, 0];
+const arrayForForceMethods = [-1, 8, 0, 9, 15, 343, 89, 125, -50, 10, 0];
 console.log("Array for filter", arrayForForceMethods);
 
-const filteredArrayWithFilter = arrayForForceMethods.filter(
+const arrayWithoutZeros = arrayForForceMethods.filter(
   (element) => element !== 0
 );
-console.log("Filtered array with filter", filteredArrayWithFilter);
+console.log("Array method filter", arrayWithoutZeros);
 
 console.log("=========================Task 9=========================");
 
-const filteredArrayWithMap = arrayForForceMethods.map(
-  (element) => element / 100
-);
-console.log("Filtered array with map", filteredArrayWithMap);
+const arrayDivided100 = arrayForForceMethods.map((element) => element / 100);
+console.log("Array Method Map", arrayDivided100);
 
 console.log("=========================Task 10=========================");
 
-const filteredArrayWithForEach = arrayForForceMethods.forEach((element) => {
+const checkIfCube = arrayForForceMethods.forEach((element) => {
   if (Math.cbrt(element) % 1 === 0)
-    console.log(`Число ${element} було зведено в куб`);
+    console.log(`The number ${element} was reduced in cube`);
 });
+
+console.log("=========================Task 11=========================");
+const indexNumberSquare100 = arrayForForceMethods.findIndex((element) => {
+  return element ** 2 === 100;
+});
+
+if (indexNumberSquare100 !== -1) {
+  arrayForForceMethods.splice(indexNumberSquare100, 1);
+  console.log(
+    `Елемент з індексом ${indexNumberSquare100} видалений. Оновлений масив:`,
+    arrayForForceMethods
+  );
+} else {
+  console.log("Елемент, квадрат якого дорівнює 100, не знайдено.");
+}
