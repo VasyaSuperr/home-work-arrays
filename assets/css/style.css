@@ -1,0 +1,106 @@
+.all-phone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.phone-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 400px;
+  flex-basis: 250px;
+  min-width: 200px;
+  flex-grow: 1;
+  border: 1px solid gray;
+}
+
+.img-phone {
+  max-width: 250px;
+  width: 100%;
+  align-self: center;
+  padding: 20px 0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.same-value-icon {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.like-icon {
+  color: orange;
+}
+
+.scales-icon {
+  color: gray;
+}
+
+.like-icon:hover,
+.scales-icon:hover {
+  background-color: rgba(145, 145, 145, 0.5);
+}
+
+.insert-promotions {
+  background-color: red;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 15px;
+  padding: 3px 10px;
+}
+
+.information-phone {
+  padding: 0 15px;
+  letter-spacing: 1.2px;
+  line-height: 1.3rem;
+}
+
+.assessment {
+  padding: 10px 15px 0;
+  color: orange;
+  margin-top: auto;
+}
+
+.old-price {
+  color: rgb(117, 117, 117);
+  text-decoration: line-through;
+  padding: 10px 15px 0;
+}
+
+.price-basket {
+  display: flex;
+}
+
+.new-price {
+  color: red;
+  font-size: 24px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding: 0 15px;
+  margin-right: auto;
+}
+
+.grocery-basket {
+  color: green;
+  padding-right: 20px;
+}
+
+.insert-availability {
+  color: green;
+  padding: 10px 15px;
+  font-size: 14px;
+}
