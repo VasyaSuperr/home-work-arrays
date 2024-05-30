@@ -210,3 +210,30 @@ if (indexNumberSquare100 !== -1) {
 } else {
   console.log("Елемент, квадрат якого дорівнює 100, не знайдено.");
 }
+
+console.log("=========================Task 12=========================");
+const checkIfPrime = arrayForForceMethods.every((element) => {
+  if (element <= 1) return false;
+  if (element <= 3) return true;
+
+  if (element % 2 === 0 || element % 3 === 0) return false;
+
+  for (let i = 5; i * i <= element; i += 6) {
+    if (element % i === 0 || element % (i + 2) === 0) return false;
+  }
+
+  return true;
+});
+
+console.log("All numbers are prime: ", checkIfPrime);
+
+console.log(arrayForForceMethods);
+console.log("=========================Task 13=========================");
+const checkIfMore0 = arrayForForceMethods.some((element) => {
+  return element < 0;
+});
+
+console.log(
+  "Is there at least 1 negative element in the array: ",
+  checkIfMore0
+);
