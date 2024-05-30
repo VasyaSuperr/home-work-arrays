@@ -30,5 +30,26 @@ console.log("=========================Task 3=========================");
 // const randomArrayCopy = Array.from(randomArray);
 const randomArrayCopy = [...randomArray];
 randomArrayCopy[1] = 5;
-console.log("New copied array", randomArrayCopy);
-console.log("Old array", randomArray);
+console.log("New copied array: ", randomArrayCopy);
+console.log("Old array: ", randomArray);
+
+console.log("=========================Task 4=========================");
+
+console.log("Elements with paired indices: ");
+// for (let i = 0; i < randomArray.length; i += 2) {
+//   console.log(`Element [${i}] = `, randomArray[i]);
+// }
+
+for (let i = 0; i < randomArray.length; i++) {
+  if (i % 2 === 0) {
+    console.log(`Element [${i}] = `, randomArray[i]);
+  }
+}
+
+console.log("=========================Task 5=========================");
+let product = 1;
+for (let i = 0; i < randomArray.length; i++) {
+  product *= randomArray[i];
+}
+
+console.log("Product of numbers = ", product);
