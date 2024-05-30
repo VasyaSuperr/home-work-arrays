@@ -174,3 +174,26 @@ console.log(
 );
 
 console.log("RAM counts:", ramCounts);
+
+console.log("=========================Task 8=========================");
+const arrayForForceMethods = [-1, 8, 0, 9, 15, 343, 89, 125, -50, -60, 0];
+console.log("Array for filter", arrayForForceMethods);
+
+const filteredArrayWithFilter = arrayForForceMethods.filter(
+  (element) => element !== 0
+);
+console.log("Filtered array with filter", filteredArrayWithFilter);
+
+console.log("=========================Task 9=========================");
+
+const filteredArrayWithMap = arrayForForceMethods.map(
+  (element) => element / 100
+);
+console.log("Filtered array with map", filteredArrayWithMap);
+
+console.log("=========================Task 10=========================");
+
+const filteredArrayWithForEach = arrayForForceMethods.forEach((element) => {
+  if (Math.cbrt(element) % 1 === 0)
+    console.log(`Число ${element} було зведено в куб`);
+});
